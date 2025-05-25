@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Design Thinking Project - Book Explorer</title>
+  <link rel="stylesheet" href="style1.css" />
+  <script defer src="script1.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Book Explorer</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#ideation">Ideation</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Book Explorer</h2>
+    <p>Find your next read by exploring genres and diving into book previews.</p>
+  </section>
+
+  <section id="about">
+    <h2>About the Project</h2>
+    <p>This project was created as part of our Design Thinking and Innovation coursework, aimed at making book discovery engaging and intuitive.</p>
+  </section>
+
+  <section id="problem">
+    <h2>Problem Statement</h2>
+    <p>Many readers struggle to find books they love across genres without a central, visual, and interactive platform.</p>
+  </section>
+
+  <section id="research">
+    <h2>User Research</h2>
+    <p>Through surveys and interviews, we learned readers appreciate visual previews, quick access to genres, and mobile-friendly design.</p>
+  </section>
+
+  <section id="ideation">
+    <h2>Ideation & Prototyping</h2>
+    <p>We brainstormed various layouts and selected a responsive, animated interface with genre-based filtering and book previews.</p>
+  </section>
+
+  <section id="solution">
+    <h2>Explore Books by Genre</h2>
+    <div class="genre-buttons">
+      <button onclick="filterBooks('fiction')">Fiction</button>
+      <button onclick="filterBooks('nonfiction')">Non-Fiction</button>
+      <button onclick="filterBooks('fantasy')">Fantasy</button>
+      <button onclick="filterBooks('science')">Science</button>
+    </div>
+    <div class="books-container" id="booksContainer">
+      <!-- Books will be populated here -->
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Team Members</h2>
+    <p>John Doe, Jane Smith, Alex Johnson</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: balaji1142004@gmail.com</p>
+    <a href="project-report.pdf" download>Download Report</a>
+  </section>
+
+  <!-- Modal for book preview -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="modalClose" class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <img id="modalImage" src="" alt="Book Cover" />
+      <p id="modalDescription"></p>
+      <a id="modalPreviewLink" href="#" target="_blank" rel="noopener noreferrer">Open Book Preview</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Book Explorer | Design Thinking Project</p>
+  </footer>
+</body>
+
+</html>
